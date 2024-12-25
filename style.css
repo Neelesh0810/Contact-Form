@@ -1,0 +1,72 @@
+body{
+    background-image: url("blurbg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+}
+form{
+    margin-top: 50px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-side{
+    color: white;
+    font-size:x-large;
+    height: 500px;
+    width: 50%;
+    height: 400px;
+    width: 550px;
+    background: transparent;
+    backdrop-filter: blur(80px);
+    margin: 140px 20px 0px 80px;
+    border-radius: 20px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+    background: linear-gradient(270deg,#190490,#c50760dc,#ff11ff);
+}
+#name, #email{
+    height: 30px;
+    width: 250px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+}
+::placeholder{
+    color: white;
+    font-size: 16px;
+}
+button{
+    width: 100px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid black;
+}
+.right-side{
+    height: 500px;
+    width: 800px;
+    background-image: url("right-side-bg.jpg");
+    background-size: cover;
+    margin: 90px 20px 0px 30px;
+    border-radius: 25px;
+}
+@media (max-width: 600px){
+    .left-side{
+        width: 80vw;
+    }
+    .right-side{
+        display: none;
+    }
+}
+button:hover{
+    background-color:palevioletred;
+}
